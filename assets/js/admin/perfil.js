@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 				NewPwd : Npass
 			},
 			success : function(json) {
-				if(json.status == "200") {
+				if(json.status == "200") {/*hola git */
 					swal('Exito','La contraseña se actualizó exitosamente', 'success');
 					location.href = base_url + "mi-perfil";
 				}else if(json.status == "300"){
