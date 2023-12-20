@@ -52,7 +52,7 @@
                     <br><br>
                     Confirmar Contraseña:&nbsp;<input class="in-vnt esta-v" type="password" id="confirm-new-pwd"  name="lastname">
                     <br><br>
-                    <button type="button" id="changepwd"  class="main-dark-button2">Actualizar</button>
+                    <button type="button" id="changepwd"  class="main-dark-button2">Actualizar</button> 
 
                 </div>
             </div>
