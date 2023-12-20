@@ -89,13 +89,14 @@
                         <?php 
                             if ($opcionMenu=="MiCuenta") {
                                ?>
-                                <li><a href="<?php echo base_url()?>mi-perfil" class="active">Perfils</a></li> 
+                                <li><a href="<?php echo base_url()?>mi-perfil" class="active">Perfil</a></li> 
                                <?php
                             }else{?>
                                 <li><a href="<?php echo base_url()?>mi-perfil">Perfil</a></li> 
                         <?php
                             }
                         ?>
+                              <li><a href="<?php echo base_url()?>logout">Cerrar sesión</a></li> 
                     </ul>        
                     <a class='menu-trigger'>
                         <span>Menu</span>

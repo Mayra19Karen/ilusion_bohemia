@@ -19,7 +19,10 @@ class AdminController extends CI_Controller {
 
 	
 	public function Eventos()
-	{                  
+	{        
+          if(empty($this->session->userdata('email')))
+			redirect(base_url().'login');
+
           $categorias = $this->Admin_model->getCategorias();
           $eventos = $this->Admin_model->getEventos();
           $data = array(
