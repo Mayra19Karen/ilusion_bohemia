@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 			imagen  = e.target.files[0].name;
 		});
 	});
-	/* log */
+	/* log  */
 	$('#form_img').on('submit', function(e){  
 		e.preventDefault();  
 		if(imagen === ''){
