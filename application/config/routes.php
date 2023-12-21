@@ -81,3 +81,6 @@ $route['get-img'] = 'GaleriaController/VerImagen';
 
 $route['mi-perfil'] = 'AdminController/MiCuenta';
 $route['cambiar-contrasenia'] = 'PerfilController/EditarPwd';
+
+$route['logout'] = 'PerfilController/closeSession';
+

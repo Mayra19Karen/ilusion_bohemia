@@ -47,6 +47,8 @@ class AdminController extends CI_Controller {
 
      function Galeria()
      {
+          if(empty($this->session->userdata('email')))
+			redirect(base_url().'login');
                     
                     $imagenes = $this->Galeria_model->getImagenes();
                     $data = array(
@@ -59,6 +61,9 @@ class AdminController extends CI_Controller {
 
      function Informacion()
      {
+          if(empty($this->session->userdata('email')))
+			redirect(base_url().'login');
+
                     $textos = $this->Info_model->getInformacion();                    
 
                     $data = array(
@@ -71,7 +76,8 @@ class AdminController extends CI_Controller {
 
      function MiCuenta()
      {
-                    //$textos = $this->Info_model->getInformacion();              
+          if(empty($this->session->userdata('email')))
+          redirect(base_url().'login');         
 
                     $data = array(
                          'opcionMenu' => 'MiCuenta',

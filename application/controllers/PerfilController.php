@@ -40,46 +40,14 @@ class PerfilController extends CI_Controller {
         $json['status'] = '300';
      }
      echo json_encode($json);
-     /*$dataImg = array(
-          'status_img' => 0
-          );
-    
-
-     $editImg = $this->Galeria_model->EditarImg($id_img,$dataImg);
-
-               // agregamos el evento
-               if ($editImg != false) {
-                    $json['status'] = '200';
-               }else{
-                    $json['status'] = '300';
-               }
-               echo json_encode($json);*/
     }
 
           
-          
-          function VerImagen()
-     {
-         
-		$json = array('status' => '500');
+    public function closeSession()
+    {
+         $this->session->sess_destroy();
 
-          $id_imagen = $this->input->post('id_img');
-
-         
-
-          $imagen = $this->Galeria_model->getImagen($id_imagen);
-          
-          $json['imagen'] = $imagen;
-
-				if ($imagen != '') {
-                         $json['status'] = '200';
-                         $json['imagen'] = $imagen;
-                    }else{
-                         $json['status'] = '300';
-                    }
-
-          echo json_encode($json);
-
-     }
+              redirect(base_url());
+    }
 
 }
