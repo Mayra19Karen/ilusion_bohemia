@@ -34,7 +34,7 @@
                     ?>
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="<?php echo base_url()?>/upload/galeria/<?=$key->nombre_img?>" alt="Card image cap">
+                        <img class="card-img-top" width="150px" height="200px" src="<?php echo base_url()?>/upload/galeria/<?=$key->nombre_img?>" alt="Card image cap">
                         <label hidden id="id_img"><?=$key->id_img?></label>
 
                         <div class="card-body">

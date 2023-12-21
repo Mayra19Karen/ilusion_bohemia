@@ -28,7 +28,7 @@
                 <div class="col-lg-4">
                     <div class="like-item">
                         <div class="thumb">
-                        <img class="card-img-top" src="<?php echo base_url()?>/upload/galeria/<?=$key->nombre_img?>" alt="Card image cap">
+                        <img class="card-img-top" width="190px" height="200px" src="<?php echo base_url()?>/upload/galeria/<?=$key->nombre_img?>" alt="Card image cap">
                             <div class="icons">
                                 <ul>
                                     <li><button id="img-<?=$key->id_img?>" type="button" class="btn btn-calendar" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-color: transparent;border-color: transparent;">
